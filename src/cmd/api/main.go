@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
+	"github.com/ZxcR/pet/internal/app/api"
 	"os"
 	"os/signal"
-	"pet/internal/app/api"
 	"syscall"
 )
 
@@ -14,5 +14,4 @@ func main() {
 
 	app := api.New()
 	app.Run(ctx)
-
 }
